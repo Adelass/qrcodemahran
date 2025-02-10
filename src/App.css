@@ -1,0 +1,91 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: yellowgreen;
+}
+
+.logo {
+  height: 15em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+/* .app{
+} */
+
+@layer utilities {
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  .company-info {
+    color: #2A68A1;
+   
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .typewriter {
+    color: #2A68A1;
+    direction: rtl;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid orange;
+    display: inline-block;
+    animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientAnimation 6s ease infinite;
+  }
+  .main-color {
+    color: #2A68A1;
+  } 
+  a{
+    color: #2A68A1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .gap-2 {
+    gap: 2rem;
+  }
+  .gap-1 {
+    gap: 0.5rem;
+  }
+  .item-center {
+    align-items: center;
+  }
+}

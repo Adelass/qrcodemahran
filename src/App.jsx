@@ -25,7 +25,7 @@ function App() {
         <div dir='rtl' className='flex gap-2 items-center justify-center space-x-4 '>
           <p className="gap-1 font-bold">
             س.ت /
-            <a href="tel:+9661010638696" className='font-bold'> 1010638696</a>
+            <a href="#" className='font-bold'> 1010638696</a>
           </p>
           <p className="gap-1 text-blue-600 font-semibold">
             ت /
